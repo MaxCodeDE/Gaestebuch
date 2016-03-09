@@ -1,0 +1,84 @@
+
+
+    <div id="faq">
+        
+        <div id="faq-oben" class="page-header"> <i class="fa fa-info fa-lg"> </i> FAQ </div>
+        
+        <br>
+        
+        <p> <center> Klicke auf eine Frage um die entsprechende Antwort zu sehen </center> </p>
+        
+        <div class="panel panel-default">
+            <div id="faq-down-icon"> <i class="fa fa-angle-double-down fa-2x"></i> </div>
+            <div onclick="showFAQAntwort(1)" id="faq-frage" class="panel-heading"> <i class="fa fa-info fa-2x"></i> &nbsp; Muss ich mich anmelden? </div>
+            <div id="faq-antwort-1" class="panel-body" style="display: none;">
+                <p> Nein, hier kann jeder lesen und schreiben ohne sich anzumelden. </p>
+            </div>
+        </div>
+            
+        <div class="panel panel-default">
+            <div id="faq-down-icon"> <i class="fa fa-angle-double-down fa-2x"></i> </div>
+            <div onclick="showFAQAntwort(2)" id="faq-frage" class="panel-heading"> <i class="fa fa-info fa-2x"></i> &nbsp; Werden Daten(IP, Standort etc.) von mir geschpeichert? </div>
+            <div id="faq-antwort-2" class="panel-body" style="display: none;">
+                <p> Nein, nat&uuml;rlich nicht. </p>
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div id="faq-down-icon"> <i class="fa fa-angle-double-down fa-2x"></i> </div>
+            <div onclick="showFAQAntwort(3)" id="faq-frage" class="panel-heading"> <i class="fa fa-info fa-2x"></i> &nbsp; Wer hat die Seite Entwickelt? </div>
+            <div id="faq-antwort-3" class="panel-body" style="display: none;">
+                <p> Der Typ von <a href="http://max-bremer.info" target="_blank">Max-Bremer.info</a>. </p>
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div id="faq-down-icon"> <i class="fa fa-angle-double-down fa-2x"></i> </div>
+            <div onclick="showFAQAntwort(4)" id="faq-frage" class="panel-heading"> <i class="fa fa-info fa-2x"></i> &nbsp; Wie wurde diese Seite Entwickelt? </div>
+            <div id="faq-antwort-4" class="panel-body" style="display: none;">
+                <p> Mit PHP, HTML, CSS, Javascript und viel <font color="red"> <i class="fa fa-heart fa-lg"></i> </font>. </p>
+            </div>
+        </div>
+        
+        <div class="panel panel-default">
+            <div id="faq-down-icon"> <i class="fa fa-angle-double-down fa-2x"></i> </div>
+            <div onclick="showFAQAntwort(5)" id="faq-frage" class="panel-heading"> <i class="fa fa-info fa-2x"></i> &nbsp; Kann ich den Source Code sehen? </div>
+            <div id="faq-antwort-5" class="panel-body" style="display: none;">
+                <p> Den Frontend Code gerne unter "Seitenquelltext anzeigen", aber das Backend bleibt meins :D. </p>
+            </div>
+        </div>
+    
+    
+    </div>
+
+
+
+
+<style>
+#faq {
+display: none;
+position: absolute;
+margin-left: 30%;
+margin-top: 2%;
+width: 50%;
+height: 50%;
+}
+#faq-oben {
+font-size: 300%;
+text-align: center;
+}
+#faq-down-icon {
+position: absolute;
+margin-top: 1.5%;
+margin-left: 95%;
+color: darkgray;
+pointer-events: none;
+}
+</style>
+
+
+<script>
+function showFAQAntwort(antwortId){
+    $('#faq-antwort-' + antwortId).slideToggle('slow');
+}
+</script>

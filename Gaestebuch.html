@@ -1,0 +1,75 @@
+<html>
+
+<div id="guestbook-header" class="page-header">
+    <h1> <i class="fa fa-book fa-fw"></i> G&auml;stebuch <small>  </small></h1>
+</div>
+    
+<div id="guestbook" class="list-group">
+    
+        
+        <?php getMessanges(); ?>
+    
+    <br> <br>
+    
+</div>
+    
+<div id="schreiben" class="list-group">
+    
+    <form action="schreiben.php" method="post">
+    
+    <div class="input-group">
+      <span class="input-group-addon" > Name: </span>
+      <input name="name" type="text" class="form-control" placeholder="">
+    </div>
+        
+    <br>
+    
+    <div class="input-group">
+      <span class="input-group-addon"> Text: </span>
+      <input name="text" type="text" class="form-control" placeholder="">
+    </div>
+    
+    <br>
+       
+    <center>
+    <button type="Sumbit" class="btn btn-default btn-sm">
+      <i class='fa fa-comment'></i> Scheiben
+    </button>
+    </center>
+        
+    </form>
+        
+</div>
+    
+<style>
+#guestbook-header {
+display: none;
+position: absolute;
+margin-left: 30%;
+margin-top: 2%;
+width: 50%;
+height: 10%;
+text-align: center;
+}
+#guestbook {
+position: absolute;
+margin-left: 30%;
+margin-top: 9%; <!-- Bei guestbook-header 12 -->
+width: 50%;
+height: 50%;
+width: 50%;
+    
+}  
+#schreiben {
+display: none;
+position: absolute;
+margin-left: 5%;
+margin-top: 40%;
+width: 20%;
+
+}
+    
+</style>
+
+
+</html>
