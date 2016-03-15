@@ -1,4 +1,4 @@
-# Cnwitze
+# Gästebuch
 
 Diese WebAPP ist ein von mir Entwickeltes Gästebuch.
 
